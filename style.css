@@ -1,0 +1,214 @@
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-image: linear-gradient(to top, #272727, #141414 );
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 2;
+    transition: all .25s ease-in-out;
+    background-color: rgb(44, 41, 41);
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    border-left: 3px solid #afb7c4;
+    border-bottom: 3px solid #2c2020;
+    box-shadow: 
+    1px 3px  3px #e2bbbb inset,
+    1px 3px  4px #e2bbbb inset,
+    1px 3px  6px #e2bbbb inset;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: rgb(44, 41, 41);
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+.container-sm{
+    margin-top:30px;
+    max-width: 400px;
+    height: 700px;
+}
+
+.profile{
+    width: 100px;
+    backdrop-filter: sepia(90%);
+}
+
+.bienvenida{
+    width: 300px;
+}
+small{
+    font-weight: 600;
+    box-shadow: 1px -6px 10px black;
+}
+span{
+    font-weight: 600;
+}
+
+.main_contain{
+    box-shadow: 
+    3px 3px 7px rgb(82, 32, 32),
+    5px 3px 9px rgb(94, 25, 25),
+    7px 3px 11px rgb(78, 28, 28);
+}
+
+.rick{
+    background-color: #dc3545;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px;
+    transition: .3s;
+}
+
+.rick:hover{
+    transform: scale(1.2);
+
+}
+form{
+    padding: 15px;
+}
+input{
+    margin-top: 3px;
+    outline: none;
+    min-width: 380px;
+}
+
+textarea{
+    max-width: 500px;
+    
+}
+
+.buttonn{
+    background-color: transparent;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border: 3px solid green;
+    border-radius: 14px;
+    position: relative;
+    left: 40%;
+    transition: .3s all;
+
+}
+
+.buttonn:hover{
+    background-color: green;
+}
+
+.card{
+    width: 288px;
+}
+
+.newbtn{
+    background-color: red ;
+}
